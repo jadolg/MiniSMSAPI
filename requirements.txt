@@ -1,5 +1,6 @@
 Django==1.10.6
 djangorestframework==3.5.3
+gunicorn==19.7.1
 httplib2==0.10.3
 PySocks==1.6.7
 pytz==2017.2
