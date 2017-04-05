@@ -9,6 +9,7 @@ from theapi.models import HistorialSMS, CuentaTwilio, Telefono
 class HistorialSMSAdmin(admin.ModelAdmin):
     list_display = ('fecha', 'destinatario', 'mensaje', 'user',)
     list_filter = ('fecha', 'destinatario', 'user', )
+    readonly_fields = ('fecha', 'destinatario', 'mensaje', 'user',)
 
     ordering = ['-fecha', ]
 
